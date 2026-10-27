@@ -1,349 +1,848 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Puna Shop – Cày thuê Genshin Impact</title>
-<meta name="description" content="Puna Shop nhận cày thuê Genshin Impact: Rush Map, mở điểm dịch chuyển, Thần Đồng, chăm acc, content chiến đấu. Cày tay 100%.">
-<meta name="theme-color" content="#1f2a5c">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#1f2a5c; --muted:#5b6490; --paper:#f1f5fc; --card:#fff; --line:#d5def0;
-  --violet:#6a4fc9; --sky:#dbe9fb; --gold:#e4a935; --mint:#d9f1e6; --rose:#fde3e8;
-  --r:18px; --bar:128px;
-}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:128px}
-body{font:16px/1.55 "Be Vietnam Pro",system-ui,sans-serif;color:var(--ink);background:var(--paper);
-  padding-bottom:calc(var(--bar) + env(safe-area-inset-bottom,0px));-webkit-tap-highlight-color:transparent}
-h1,h2,h3,.brand{font-family:"Baloo 2","Be Vietnam Pro",sans-serif;line-height:1.15}
-a{color:var(--violet)}
-:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:8px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Puna Shop – Cày thuê Genshin Impact</title>
+  <meta name="description"
+    content="Puna Shop nhận cày thuê Genshin Impact: Rush Map, mở điểm dịch chuyển, Thần Đồng, chăm acc, content chiến đấu. Cày tay 100%.">
+  <meta name="theme-color" content="#1f2a5c">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1f2a5c;
+      --muted: #5b6490;
+      --paper: #f1f5fc;
+      --card: #fff;
+      --line: #d5def0;
+      --violet: #6a4fc9;
+      --sky: #dbe9fb;
+      --gold: #e4a935;
+      --mint: #d9f1e6;
+      --rose: #fde3e8;
+      --r: 18px;
+      --bar: 128px;
+    }
 
-/* header */
-header{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
-.bar{display:flex;align-items:center;gap:12px;height:56px}
-.brand{font-weight:800;font-size:1.35rem;color:var(--ink);text-decoration:none;margin-right:auto}
-.brand i{color:var(--gold);font-style:normal}
-nav.top{display:flex;gap:4px}
-nav.top a{padding:8px 12px;border-radius:99px;color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
-nav.top a:hover,nav.top a[aria-current]{background:var(--sky)}
-@media(max-width:640px){nav.top a.hide-m{display:none}}
+    * {
+      box-sizing: border-box;
+      margin: 0
+    }
 
-/* hero */
-.hero{padding:36px 0 20px;text-align:center;background:
-  radial-gradient(circle at 15% 20%,#e3dcff 0,transparent 40%),radial-gradient(circle at 90% 0,#cfe6ff 0,transparent 45%)}
-.hero h1{font-size:clamp(2.4rem,9vw,4.2rem);font-weight:800;letter-spacing:-.01em}
-.hero h1 i{font-style:normal;color:var(--violet)}
-.hero p{color:var(--muted);max-width:520px;margin:10px auto 0}
-.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0 6px}
-.chip{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:.9rem;font-weight:500}
-.cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:99px;
-  border:2px solid var(--ink);background:var(--card);color:var(--ink);font:600 1rem "Be Vietnam Pro",sans-serif;text-decoration:none;cursor:pointer}
-.btn.pri{background:var(--ink);color:#fff}
-.btn:active{transform:scale(.97)}
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 128px
+    }
 
-/* tabs */
-.tabs{position:sticky;top:calc(56px + env(safe-area-inset-top,0px));z-index:10;background:var(--paper);padding:10px 0;border-bottom:1px solid var(--line);
-  display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
-.tabs::-webkit-scrollbar{display:none}
-.tabs a{flex:none;padding:10px 16px;border-radius:99px;background:var(--card);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;min-height:44px;display:flex;align-items:center}
-.tabs a.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+    body {
+      font: 16px/1.55 "Be Vietnam Pro", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      padding-bottom: calc(var(--bar) + env(safe-area-inset-bottom, 0px));
+      -webkit-tap-highlight-color: transparent
+    }
 
-/* sections */
-section.cat{padding:28px 0 4px}
-.cat>h2{font-size:1.7rem;display:flex;align-items:center;gap:10px}
-.cat>h2 span{width:38px;height:38px;border-radius:12px;background:var(--sky);display:grid;place-items:center;font-size:1.2rem}
-.cat>p.note{color:var(--muted);font-size:.92rem;margin:6px 0 14px}
-.grid{display:grid;gap:8px;grid-template-columns:1fr}
-@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
-@media(min-width:1000px){.grid.g3{grid-template-columns:1fr 1fr 1fr}}
-.item{display:flex;align-items:center;gap:12px;min-height:56px;padding:10px 14px;background:var(--card);border:2px solid var(--line);border-radius:var(--r);width:100%;font:inherit;color:inherit;text-align:left;cursor:pointer;user-select:none}
-.item .box{flex:none;width:26px;height:26px;border-radius:8px;border:2px solid var(--line);display:grid;place-items:center;color:transparent;font-weight:800;transition:.12s}
-.item .nm{flex:1;font-weight:500}
-.item .nm small{display:block;color:var(--muted);font-weight:400;font-size:.8rem}
-.item .pr{font-weight:600;color:var(--violet);white-space:nowrap}
-.item.on{border-color:var(--violet);background:#f3efff}
-.item.on .box{background:var(--violet);border-color:var(--violet);color:#fff}
-.item.nopick{cursor:default}
-.item.nopick .box{display:none}
-.item.nopick .pr{color:var(--muted)}
-.tip{margin-top:10px;padding:12px 14px;border-radius:14px;font-size:.92rem}
-.tip.rose{background:var(--rose)} .tip.mint{background:var(--mint)} .tip.sky{background:var(--sky)}
+    h1,
+    h2,
+    h3,
+    .brand {
+      font-family: "Baloo 2", "Be Vietnam Pro", sans-serif;
+      line-height: 1.15
+    }
 
-/* contact */
-.contact{margin:36px 0 12px;padding:24px;border-radius:24px;background:var(--ink);color:#fff}
-.contact h2{font-size:1.8rem}
-.contact p{opacity:.85;margin:6px 0 16px}
-.contact .btn{background:#fff;border-color:#fff}
-.contact .btn.alt{background:transparent;color:#fff}
-.contact small{display:block;margin-top:14px;opacity:.7}
-footer{padding:22px 0 10px;color:var(--muted);font-size:.88rem;text-align:center}
+    a {
+      color: var(--violet)
+    }
 
-/* action bar */
-#order{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:2px solid var(--ink);padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px))}
-#order .in{max-width:1080px;margin:0 auto;display:flex;gap:8px}
-#order .sum{max-width:1080px;margin:0 auto 8px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-weight:600;font-size:.95rem}
-#order .sum[hidden]{display:none}
-#clear{flex:none;background:none;border:0;color:var(--muted);text-decoration:underline;font:inherit;font-weight:500;min-height:36px;padding:0 6px;cursor:pointer}
-#order .btn{flex:1 1 0;min-height:48px;padding:0 10px;font-size:.92rem;white-space:nowrap}
-#order .btn.pri{flex:1.6 1 0}
-@media(max-width:520px){#order .in{flex-flow:row wrap}#order .btn.pri{flex:1 1 100%}:root{--bar:186px}}
-.toast{position:fixed;left:50%;bottom:calc(var(--bar) + 20px);transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:99px;font-size:.92rem;z-index:50;opacity:0;pointer-events:none;transition:opacity .2s;max-width:90vw;text-align:center}
-.toast.show{opacity:1}
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+      border-radius: 8px
+    }
 
-/* policy page */
-#policy{display:none;padding:28px 0 20px}
-.page-policy #home{display:none} .page-policy #policy{display:block} .page-policy #order{display:none} .page-policy{padding-bottom:0}
-#policy h1{font-size:2.2rem;margin-bottom:6px}
-#policy h2{font-size:1.25rem;margin:24px 0 6px}
-#policy p,#policy li{max-width:70ch}
-#policy ul{padding-left:20px}
-#policy .draft{background:#fff6dc;border:1px solid #f0d98c;border-radius:12px;padding:10px 14px;font-size:.9rem;margin:12px 0}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
-</style>
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 16px
+    }
+
+    /* header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding-top: env(safe-area-inset-top, 0px)
+    }
+
+    .bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      height: 56px
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--ink);
+      text-decoration: none;
+      margin-right: auto
+    }
+
+    .brand i {
+      color: var(--gold);
+      font-style: normal
+    }
+
+    nav.top {
+      display: flex;
+      gap: 4px
+    }
+
+    nav.top a {
+      padding: 8px 12px;
+      border-radius: 99px;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: .95rem
+    }
+
+    nav.top a:hover,
+    nav.top a[aria-current] {
+      background: var(--sky)
+    }
+
+    @media(max-width:640px) {
+      nav.top a.hide-m {
+        display: none
+      }
+    }
+
+    /* hero */
+    .hero {
+      padding: 36px 0 20px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 15% 20%, #e3dcff 0, transparent 40%), radial-gradient(circle at 90% 0, #cfe6ff 0, transparent 45%)
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 9vw, 4.2rem);
+      font-weight: 800;
+      letter-spacing: -.01em
+    }
+
+    .hero h1 i {
+      font-style: normal;
+      color: var(--violet)
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 520px;
+      margin: 10px auto 0
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin: 18px 0 6px
+    }
+
+    .chip {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 99px;
+      padding: 6px 14px;
+      font-size: .9rem;
+      font-weight: 500
+    }
+
+    .cta {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 18px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 99px;
+      border: 2px solid var(--ink);
+      background: var(--card);
+      color: var(--ink);
+      font: 600 1rem "Be Vietnam Pro", sans-serif;
+      text-decoration: none;
+      cursor: pointer
+    }
+
+    .btn.pri {
+      background: var(--ink);
+      color: #fff
+    }
+
+    .btn:active {
+      transform: scale(.97)
+    }
+
+    /* tabs */
+    .tabs {
+      position: sticky;
+      top: calc(56px + env(safe-area-inset-top, 0px));
+      z-index: 10;
+      background: var(--paper);
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none
+    }
+
+    .tabs::-webkit-scrollbar {
+      display: none
+    }
+
+    .tabs a {
+      flex: none;
+      padding: 10px 16px;
+      border-radius: 99px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: .95rem;
+      min-height: 44px;
+      display: flex;
+      align-items: center
+    }
+
+    .tabs a.on {
+      background: var(--ink);
+      color: #fff;
+      border-color: var(--ink)
+    }
+
+    /* sections */
+    section.cat {
+      padding: 28px 0 4px
+    }
+
+    .cat>h2 {
+      font-size: 1.7rem;
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .cat>h2 span {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      background: var(--sky);
+      display: grid;
+      place-items: center;
+      font-size: 1.2rem
+    }
+
+    .cat>p.note {
+      color: var(--muted);
+      font-size: .92rem;
+      margin: 6px 0 14px
+    }
+
+    .grid {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: 1fr
+    }
+
+    @media(min-width:700px) {
+      .grid {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    @media(min-width:1000px) {
+      .grid.g3 {
+        grid-template-columns: 1fr 1fr 1fr
+      }
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 56px;
+      padding: 10px 14px;
+      background: var(--card);
+      border: 2px solid var(--line);
+      border-radius: var(--r);
+      width: 100%;
+      font: inherit;
+      color: inherit;
+      text-align: left;
+      cursor: pointer;
+      user-select: none
+    }
+
+    .item .box {
+      flex: none;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      border: 2px solid var(--line);
+      display: grid;
+      place-items: center;
+      color: transparent;
+      font-weight: 800;
+      transition: .12s
+    }
+
+    .item .nm {
+      flex: 1;
+      font-weight: 500
+    }
+
+    .item .nm small {
+      display: block;
+      color: var(--muted);
+      font-weight: 400;
+      font-size: .8rem
+    }
+
+    .item .pr {
+      font-weight: 600;
+      color: var(--violet);
+      white-space: nowrap
+    }
+
+    .item.on {
+      border-color: var(--violet);
+      background: #f3efff
+    }
+
+    .item.on .box {
+      background: var(--violet);
+      border-color: var(--violet);
+      color: #fff
+    }
+
+    .item.nopick {
+      cursor: default
+    }
+
+    .item.nopick .box {
+      display: none
+    }
+
+    .item.nopick .pr {
+      color: var(--muted)
+    }
+
+    .tip {
+      margin-top: 10px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      font-size: .92rem
+    }
+
+    .tip.rose {
+      background: var(--rose)
+    }
+
+    .tip.mint {
+      background: var(--mint)
+    }
+
+    .tip.sky {
+      background: var(--sky)
+    }
+
+    /* contact */
+    .contact {
+      margin: 36px 0 12px;
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--ink);
+      color: #fff
+    }
+
+    .contact h2 {
+      font-size: 1.8rem
+    }
+
+    .contact p {
+      opacity: .85;
+      margin: 6px 0 16px
+    }
+
+    .contact .btn {
+      background: #fff;
+      border-color: #fff
+    }
+
+    .contact .btn.alt {
+      background: transparent;
+      color: #fff
+    }
+
+    .contact small {
+      display: block;
+      margin-top: 14px;
+      opacity: .7
+    }
+
+    footer {
+      padding: 22px 0 10px;
+      color: var(--muted);
+      font-size: .88rem;
+      text-align: center
+    }
+
+    /* action bar */
+    #order {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 30;
+      background: var(--card);
+      border-top: 2px solid var(--ink);
+      padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px))
+    }
+
+    #order .in {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      gap: 8px
+    }
+
+    #order .sum {
+      max-width: 1080px;
+      margin: 0 auto 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: .95rem
+    }
+
+    #order .sum[hidden] {
+      display: none
+    }
+
+    #clear {
+      flex: none;
+      background: none;
+      border: 0;
+      color: var(--muted);
+      text-decoration: underline;
+      font: inherit;
+      font-weight: 500;
+      min-height: 36px;
+      padding: 0 6px;
+      cursor: pointer
+    }
+
+    #order .btn {
+      flex: 1 1 0;
+      min-height: 48px;
+      padding: 0 10px;
+      font-size: .92rem;
+      white-space: nowrap
+    }
+
+    #order .btn.pri {
+      flex: 1.6 1 0
+    }
+
+    @media(max-width:520px) {
+      #order .in {
+        flex-flow: row wrap
+      }
+
+      #order .btn.pri {
+        flex: 1 1 100%
+      }
+
+      :root {
+        --bar: 186px
+      }
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: calc(var(--bar) + 20px);
+      transform: translateX(-50%);
+      background: var(--ink);
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 99px;
+      font-size: .92rem;
+      z-index: 50;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s;
+      max-width: 90vw;
+      text-align: center
+    }
+
+    .toast.show {
+      opacity: 1
+    }
+
+    /* policy page */
+    #policy {
+      display: none;
+      padding: 28px 0 20px
+    }
+
+    .page-policy #home {
+      display: none
+    }
+
+    .page-policy #policy {
+      display: block
+    }
+
+    .page-policy #order {
+      display: none
+    }
+
+    .page-policy {
+      padding-bottom: 0
+    }
+
+    #policy h1 {
+      font-size: 2.2rem;
+      margin-bottom: 6px
+    }
+
+    #policy h2 {
+      font-size: 1.25rem;
+      margin: 24px 0 6px
+    }
+
+    #policy p,
+    #policy li {
+      max-width: 70ch
+    }
+
+    #policy ul {
+      padding-left: 20px
+    }
+
+    #policy .draft {
+      background: #fff6dc;
+      border: 1px solid #f0d98c;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: .9rem;
+      margin: 12px 0
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      * {
+        transition: none !important;
+        scroll-behavior: auto !important
+      }
+    }
+  </style>
 </head>
-<body>
-<header>
-  <div class="wrap bar">
-    <a class="brand" href="#" aria-label="Puna Shop – trang chủ"><i>✦</i> Puna Shop</a>
-    <nav class="top" aria-label="Menu chính">
-      <a href="#bang-gia" class="hide-m">Bảng giá</a>
-      <a href="#chinh-sach" id="nav-policy">Chính sách</a>
-      <a href="#lien-he">Liên hệ</a>
-    </nav>
-  </div>
-</header>
 
-<main id="home">
-  <div class="hero">
-    <div class="wrap">
-      <h1>Cày thuê <i>Genshin Impact</i></h1>
-      <p>Cày tay 100%. Nhanh gọn, uy tín, làm theo yêu cầu. Chạm vào dịch vụ bên dưới để chọn, tổng tiền tự tính, rồi gửi ảnh cho shop để chốt.</p>
-      <div class="chips"><span class="chip">Cày tay 100%</span><span class="chip">Nhanh gọn</span><span class="chip">Báo giá theo yêu cầu</span></div>
-      <div class="cta">
-        <a class="btn pri" href="#bang-gia">Xem bảng giá</a>
-        <a class="btn" href="#lien-he">Liên hệ</a>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="brand" href="#" aria-label="Puna Shop – trang chủ"><i>✦</i> Puna Shop</a>
+      <nav class="top" aria-label="Menu chính">
+        <a href="#bang-gia" class="hide-m">Bảng giá</a>
+        <a href="#chinh-sach" id="nav-policy">Chính sách</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="hero">
+      <div class="wrap">
+        <h1>Cày thuê <i>Genshin Impact</i></h1>
+        <p>Cày tay 100%. Nhanh gọn, uy tín, làm theo yêu cầu. Chạm vào dịch vụ bên dưới để chọn, tổng tiền tự tính, rồi
+          gửi ảnh cho shop để chốt.</p>
+        <div class="chips"><span class="chip">Cày tay 100%</span><span class="chip">Nhanh gọn</span><span
+            class="chip">Báo giá theo yêu cầu</span></div>
+        <div class="cta">
+          <a class="btn pri" href="#bang-gia">Xem bảng giá</a>
+          <a class="btn" href="#lien-he">Liên hệ</a>
+        </div>
       </div>
     </div>
+
+    <div class="wrap" id="bang-gia">
+      <nav class="tabs" id="tabs" aria-label="Danh mục dịch vụ"></nav>
+      <div id="cats"></div>
+
+      <section class="contact" id="lien-he">
+        <h2>Inbox để kiểm tra tiến độ và chốt giá</h2>
+        <p>Giá có thể thay đổi tùy tình trạng tài khoản và khối lượng công việc. Nhắn trước để Puna Shop xác nhận rồi
+          mới cày.</p>
+        <div class="cta" style="justify-content:flex-start">
+          <a class="btn" href="https://www.facebook.com/profile.php?id=61570781885555" target="_blank"
+            rel="noopener">Facebook 1</a>
+          <a class="btn alt" href="https://www.facebook.com/dinh.duc.5203141/" target="_blank" rel="noopener">Facebook
+            2</a>
+        </div>
+        <small>Chọn dịch vụ ở bảng giá, bấm "Nhấn để sao chép bill" rồi dán vào tin nhắn để gửi cho shop. Liên hệ
+          Facebook nào cũng được.</small>
+      </section>
+      <footer>© Puna Shop · <a href="#chinh-sach">Chính sách</a></footer>
+    </div>
+  </main>
+
+  <main id="policy">
+    <div class="wrap">
+      <p><a href="#">← Về trang chủ</a></p>
+      <h1>Chính sách Puna Shop</h1>
+      <!-- <div class="draft">Bản nháp để bạn chỉnh sửa. Hãy đọc lại và sửa theo cách làm việc thực tế của shop trước khi đăng.</div> -->
+
+      <h2>1. Quy trình nhận đơn</h2>
+      <ul>
+        <li>Khách nhắn tin, gửi UID, server và mô tả công việc cần làm.</li>
+        <li>Shop kiểm tra tình trạng tài khoản, báo giá cuối cùng và thời gian dự kiến.</li>
+        <li>Chỉ bắt đầu cày sau khi hai bên đã chốt giá và phạm vi công việc.</li>
+      </ul>
+
+      <h2>2. Thanh toán</h2>
+      <ul>
+        <li>Thanh toán trước toàn bộ hoặc đặt cọc, tùy đơn. Shop sẽ nói rõ khi báo giá.</li>
+        <li>Đơn lớn có thể chia đợt thanh toán theo tiến độ.</li>
+        <li>Giá trên bảng chỉ mang tính tham khảo và có thể thay đổi theo tiến độ tài khoản, yêu cầu rương, Thần Đồng,
+          waypoint hoặc quest đặc biệt.</li>
+      </ul>
+
+      <h2>3. Bảo mật tài khoản</h2>
+      <ul>
+        <li>Cày tay 100%, không dùng phần mềm hay công cụ can thiệp game.</li>
+        <li>Shop chỉ dùng thông tin đăng nhập cho đơn đã nhận và không chia sẻ cho bên thứ ba.</li>
+        <li>Khách nên đổi mật khẩu sau khi hoàn thành đơn.</li>
+        <li>Khách cần tự cân nhắc rủi ro khi để người khác đăng nhập tài khoản, vì điều này có thể trái điều khoản của
+          nhà phát hành game.</li>
+      </ul>
+
+      <h2>4. Thời gian thực hiện</h2>
+      <ul>
+        <li>Thời gian phụ thuộc khối lượng công việc và lịch của shop, sẽ báo trước khi nhận đơn.</li>
+        <li>Shop cập nhật tiến độ qua tin nhắn khi khách hỏi.</li>
+        <li>Khách vui lòng không đăng nhập vào acc khi đơn đang chạy.</li>
+      </ul>
+
+      <h2>5. Hủy đơn và hoàn tiền</h2>
+      <ul>
+        <li>Chưa bắt đầu cày: hoàn tiền theo thỏa thuận.</li>
+        <li>Đang cày: tính phí phần đã hoàn thành, hoàn phần còn lại.</li>
+        <li>Công việc chưa làm được do lỗi phía shop sẽ được làm lại hoặc hoàn tiền phần tương ứng.</li>
+      </ul>
+
+      <h2>6. Phạm vi không bao gồm</h2>
+      <ul>
+        <li>Thần Đồng: không bao gồm Lưu Minh Thạch.</li>
+        <li>Những mục không ghi trên bảng giá cần được báo giá riêng.</li>
+        <li>Content chiến đấu (La Hoàn, Nhà Hát, Ảo Cảnh): thương lượng, khách gửi đội hình và mục tiêu cần đạt.</li>
+      </ul>
+
+      <h2>7. Liên hệ</h2>
+      <p><a href="https://www.facebook.com/profile.php?id=61570781885555" target="_blank" rel="noopener">Facebook 1</a>
+        · <a href="https://www.facebook.com/dinh.duc.5203141/" target="_blank" rel="noopener">Facebook 2</a></p>
+    </div>
+  </main>
+
+  <div id="order" role="region" aria-label="Dịch vụ đã chọn và liên hệ">
+    <div class="sum" id="sum" hidden><span id="sumtxt"></span><button type="button" id="clear">Xóa chọn</button></div>
+    <div class="in">
+      <button class="btn pri" id="copyimg" type="button">Nhấn để sao chép bill</button>
+      <a class="btn" href="https://www.facebook.com/profile.php?id=61570781885555" target="_blank"
+        rel="noopener">Facebook 1</a>
+      <a class="btn" href="https://www.facebook.com/dinh.duc.5203141/" target="_blank" rel="noopener">Facebook 2</a>
+    </div>
   </div>
+  <div class="toast" id="toast" role="status"></div>
 
-  <div class="wrap" id="bang-gia">
-    <nav class="tabs" id="tabs" aria-label="Danh mục dịch vụ"></nav>
-    <div id="cats"></div>
-
-    <section class="contact" id="lien-he">
-      <h2>Inbox để kiểm tra tiến độ và chốt giá</h2>
-      <p>Giá có thể thay đổi tùy tình trạng tài khoản và khối lượng công việc. Nhắn trước để Puna Shop xác nhận rồi mới cày.</p>
-      <div class="cta" style="justify-content:flex-start">
-        <a class="btn" href="https://www.facebook.com/profile.php?id=61570781885555" target="_blank" rel="noopener">Facebook 1</a>
-        <a class="btn alt" href="https://www.facebook.com/dinh.duc.5203141/" target="_blank" rel="noopener">Facebook 2</a>
-      </div>
-      <small>Chọn dịch vụ ở bảng giá, bấm "Nhấn để sao chép bill" rồi dán vào tin nhắn để gửi cho shop. Liên hệ Facebook nào cũng được.</small>
-    </section>
-    <footer>© Puna Shop · <a href="#chinh-sach">Chính sách</a></footer>
-  </div>
-</main>
-
-<main id="policy">
-  <div class="wrap">
-    <p><a href="#">← Về trang chủ</a></p>
-    <h1>Chính sách Puna Shop</h1>
-    <div class="draft">Bản nháp để bạn chỉnh sửa. Hãy đọc lại và sửa theo cách làm việc thực tế của shop trước khi đăng.</div>
-
-    <h2>1. Quy trình nhận đơn</h2>
-    <ul><li>Khách nhắn tin, gửi UID, server và mô tả công việc cần làm.</li>
-    <li>Shop kiểm tra tình trạng tài khoản, báo giá cuối cùng và thời gian dự kiến.</li>
-    <li>Chỉ bắt đầu cày sau khi hai bên đã chốt giá và phạm vi công việc.</li></ul>
-
-    <h2>2. Thanh toán</h2>
-    <ul><li>Thanh toán trước toàn bộ hoặc đặt cọc, tùy đơn. Shop sẽ nói rõ khi báo giá.</li>
-    <li>Đơn lớn có thể chia đợt thanh toán theo tiến độ.</li>
-    <li>Giá trên bảng chỉ mang tính tham khảo và có thể thay đổi theo tiến độ tài khoản, yêu cầu rương, Thần Đồng, waypoint hoặc quest đặc biệt.</li></ul>
-
-    <h2>3. Bảo mật tài khoản</h2>
-    <ul><li>Cày tay 100%, không dùng phần mềm hay công cụ can thiệp game.</li>
-    <li>Shop chỉ dùng thông tin đăng nhập cho đơn đã nhận và không chia sẻ cho bên thứ ba.</li>
-    <li>Khách nên đổi mật khẩu sau khi hoàn thành đơn.</li>
-    <li>Khách cần tự cân nhắc rủi ro khi để người khác đăng nhập tài khoản, vì điều này có thể trái điều khoản của nhà phát hành game.</li></ul>
-
-    <h2>4. Thời gian thực hiện</h2>
-    <ul><li>Thời gian phụ thuộc khối lượng công việc và lịch của shop, sẽ báo trước khi nhận đơn.</li>
-    <li>Shop cập nhật tiến độ qua tin nhắn khi khách hỏi.</li>
-    <li>Khách vui lòng không đăng nhập vào acc khi đơn đang chạy.</li></ul>
-
-    <h2>5. Hủy đơn và hoàn tiền</h2>
-    <ul><li>Chưa bắt đầu cày: hoàn tiền theo thỏa thuận.</li>
-    <li>Đang cày: tính phí phần đã hoàn thành, hoàn phần còn lại.</li>
-    <li>Công việc chưa làm được do lỗi phía shop sẽ được làm lại hoặc hoàn tiền phần tương ứng.</li></ul>
-
-    <h2>6. Phạm vi không bao gồm</h2>
-    <ul><li>Thần Đồng: không bao gồm Lưu Minh Thạch.</li>
-    <li>Những mục không ghi trên bảng giá cần được báo giá riêng.</li>
-    <li>Content chiến đấu (La Hoàn, Nhà Hát, Ảo Cảnh): thương lượng, khách gửi đội hình và mục tiêu cần đạt.</li></ul>
-
-    <h2>7. Liên hệ</h2>
-    <p><a href="https://www.facebook.com/profile.php?id=61570781885555" target="_blank" rel="noopener">Facebook 1</a> · <a href="https://www.facebook.com/dinh.duc.5203141/" target="_blank" rel="noopener">Facebook 2</a></p>
-  </div>
-</main>
-
-<div id="order" role="region" aria-label="Dịch vụ đã chọn và liên hệ">
-  <div class="sum" id="sum" hidden><span id="sumtxt"></span><button type="button" id="clear">Xóa chọn</button></div>
-  <div class="in">
-    <button class="btn pri" id="copyimg" type="button">Nhấn để sao chép bill</button>
-    <a class="btn" href="https://www.facebook.com/profile.php?id=61570781885555" target="_blank" rel="noopener">Facebook 1</a>
-    <a class="btn" href="https://www.facebook.com/dinh.duc.5203141/" target="_blank" rel="noopener">Facebook 2</a>
-  </div>
-</div>
-<div class="toast" id="toast" role="status"></div>
-
-<script>
-var DATA=[
-{id:'rush',name:'Rush Map',icon:'',note:'Tính theo khu vực và tiến độ tài khoản. Các yêu cầu rương, Thần Đồng, waypoint hoặc quest đặc biệt cần xác nhận trước.',g:'g3',items:[
-['Mondstadt',160],['Long Tích Tuyết Sơn',105],['Liyue',450],['Trầm Ngọc Cốc',210],['Vực Đá Sâu',240],['Inazuma',390],['Sumeru (rừng)',480],['Sumeru (sa mạc)',600],['Fontaine',630],['Biển Kỷ Nguyên',90],['Enkanomiya',200],['Natlan',630],['Nod-Krai',655],['Khu nghỉ dưỡng',95],['Núi gió lặng',90],['Thần điện không gian',220]]},
-{id:'tp',name:'Điểm dịch chuyển',icon:'',note:'Mở nhanh đủ điểm theo khu vực.',g:'g3',items:[
-['Mondstadt',50],['Liyue',50],['Trầm Ngọc Sơn',35],['Sumeru',130],['Inazuma',60],['Fontaine',130],['Vực Đá Sâu',50],['Enkanomiya',60],['Natlan',60],['Nod-Krai',60],['Núi thành viên cổ',50]]},
-{id:'oculi',name:'Thần Đồng',icon:'',note:'Không bao gồm Lưu Minh Thạch.',g:'g3',items:[
-['Phong',45],['Nham',85],['Lôi',120],['Thảo',190],['Thủy',220],['Hỏa',195],['Nguyệt',195],['Cá chép',50],['Mã não',45]]},
-{id:'acc',name:'Chăm acc',icon:'',note:'Xác nhận rõ phạm vi daily, nhựa và event trước khi nhận.',g:'',items:[
-['Daily + xả nhựa',3,'/ngày'],['Gói tuần',18],['Gói tháng',60],['Daily tuần',220],['Build nhân vật theo yêu cầu','Báo giá','Artifact, vũ khí, thiên phú, đổi hình...']]},
-{id:'fight',name:'Content chiến đấu',icon:'',note:'Khách gửi đội hình và mục tiêu cần đạt để báo giá phù hợp.',g:'',items:[
-['La Hoàn tầng 9-12','Thương lượng'],['Nhà Hát','Thương lượng'],['Ảo Cảnh','Thương lượng']]},
-{id:'sup',name:'Phụ',icon:'',note:'',g:'',items:[['Tinh Diệp','Báo giá']]},
-{id:'more',name:'Mục khác',icon:'',note:'',g:'',items:[
-['Ma Thần',40,'/màn'],['Truyền Thuyết',27.5,'/màn','Giá 25-30k/màn, tạm tính 27,5k'],['Nhiệm vụ đồng hành',20,'/màn'],['Nhiệm vụ Thế Giới',22.5,'/quest','Giá 20-25k/quest, tạm tính 22,5k']]}
-];
-
-var $=function(q){return document.querySelector(q)};
-function pr(it){return typeof it[1]==='number'?(it[1]===27.5?'25-30k':it[1]===22.5?'20-25k':it[1]+'k')+(it[2]||''):it[1]}
-function sub(it){return typeof it[1]==='number'?'':(it[2]||'')}
-
-var sel={};
-function rng(it){return it[1]===27.5?[25,30]:it[1]===22.5?[20,25]:[it[1],it[1]]}
-function money(k){return Math.round(k*1000).toLocaleString('vi-VN')+'đ'}
-function picked(){var out=[];DATA.forEach(function(c){var its=[];c.items.forEach(function(it,i){if(sel[c.id+i])its.push(it)});if(its.length)out.push({c:c,items:its})});return out}
-function totals(){var t={lo:0,hi:0,other:0,n:0};picked().forEach(function(g){g.items.forEach(function(it){t.n++;if(typeof it[1]==='number'){var r=rng(it);t.lo+=r[0];t.hi+=r[1]}else t.other++})});return t}
-function totalTxt(t){if(!t.lo&&!t.hi)return 'Chờ shop báo giá';return t.lo===t.hi?money(t.lo):money(t.lo)+' – '+money(t.hi)}
-function refresh(){var t=totals();$('#sum').hidden=!t.n;$('#sumtxt').textContent=t.n+' mục · '+totalTxt(t)+((t.other&&(t.lo||t.hi))?' + '+t.other+' mục báo giá':'')}
-
-function build(){
-  var html='',tabs='';
-  DATA.forEach(function(c){
-    tabs+='<a href="#'+c.id+'">'+c.name+'</a>';
-    html+='<section class="cat" id="'+c.id+'"><h2>'+(c.icon?'<span aria-hidden="true">'+c.icon+'</span>':'')+c.name+'</h2><p class="note">'+c.note+'</p><div class="grid '+c.g+'">';
-    c.items.forEach(function(it,i){
-      var sb=sub(it);
-      html+='<button type="button" class="item" data-k="'+c.id+i+'" aria-pressed="false"><span class="box" aria-hidden="true">✓</span><span class="nm">'+it[0]+(sb?'<small>'+sb+'</small>':'')+'</span><span class="pr">'+pr(it)+'</span></button>';
-    });
-    html+='</div></section>';
-  });
-  $('#tabs').innerHTML=tabs; $('#cats').innerHTML=html;
-}
-document.addEventListener('click',function(e){
-  var b=e.target.closest('.item');if(!b)return;
-  var k=b.dataset.k;if(sel[k])delete sel[k];else sel[k]=1;
-  b.classList.toggle('on',!!sel[k]);b.setAttribute('aria-pressed',!!sel[k]);refresh();
-});
-$('#clear').onclick=function(){sel={};document.querySelectorAll('.item.on').forEach(function(b){b.classList.remove('on');b.setAttribute('aria-pressed','false')});refresh()};
-
-function toast(m){var t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.h);toast.h=setTimeout(function(){t.classList.remove('show')},2800)}
-
-/* ---- Vẽ ảnh bảng giá theo mục đã chọn ---- */
-function drawPoster(){
-  var fonts=document.fonts?Promise.all([document.fonts.load('600 22px "Be Vietnam Pro"'),document.fonts.load('800 40px "Baloo 2"')]).catch(function(){}):Promise.resolve();
-  return fonts.then(function(){
-    var S=2,W=900,P=40,CW=W-2*P,GAP=22,F='"Be Vietnam Pro",sans-serif',H='"Baloo 2","Be Vietnam Pro",sans-serif';
-    var groups=picked(),t=totals(),y=170,layout=[];
-    groups.forEach(function(g){var h=84+14;g.items.forEach(function(it){h+=sub(it)?62:42});layout.push({g:g,y:y,h:h});y+=h+GAP});
-    var ty=y,th=(t.other&&(t.lo||t.hi))?170:140;y+=th+GAP;
-    var fy=y,fh=140,H2=fy+fh+40;
-    var cv=document.createElement('canvas');cv.width=W*S;cv.height=H2*S;
-    var x=cv.getContext('2d');x.scale(S,S);
-    function rr(px,py,w,h,r){x.beginPath();x.moveTo(px+r,py);x.arcTo(px+w,py,px+w,py+h,r);x.arcTo(px+w,py+h,px,py+h,r);x.arcTo(px,py+h,px,py,r);x.arcTo(px,py,px+w,py,r);x.closePath()}
-    x.fillStyle='#f1f5fc';x.fillRect(0,0,W,H2);
-    var gr=x.createRadialGradient(80,50,0,80,50,420);gr.addColorStop(0,'#e3dcff');gr.addColorStop(1,'rgba(227,220,255,0)');x.fillStyle=gr;x.fillRect(0,0,W,H2);
-    x.textBaseline='alphabetic';x.textAlign='left';
-    x.fillStyle='#e4a935';x.font='800 52px '+H;x.fillText('✦',P,92);
-    x.fillStyle='#1f2a5c';x.font='800 60px '+H;x.fillText('Puna Shop',P+58,96);
-    x.fillStyle='#5b6490';x.font='500 23px '+F;x.fillText('Dịch vụ cày thuê Genshin Impact đã chọn · Cày tay 100%',P,138);
-    layout.forEach(function(L){
-      rr(P,L.y,CW,L.h,22);x.fillStyle='#fff';x.fill();x.lineWidth=2;x.strokeStyle='#d5def0';x.stroke();
-      x.fillStyle='#1f2a5c';x.font='800 34px '+H;x.textAlign='left';x.fillText(L.g.c.name,P+24,L.y+54);
-      var yy=L.y+84;
-      L.g.items.forEach(function(it){
-        var sb=sub(it),hh=sb?62:42;
-        x.fillStyle='#1f2a5c';x.font='500 22px '+F;x.textAlign='left';x.fillText(it[0],P+24,yy+16);
-        x.fillStyle='#6a4fc9';x.font='600 22px '+F;x.textAlign='right';x.fillText(pr(it),P+CW-24,yy+16);x.textAlign='left';
-        if(sb){x.fillStyle='#5b6490';x.font='400 16px '+F;x.fillText(sb,P+24,yy+40)}
-        x.setLineDash([4,5]);x.strokeStyle='#d5def0';x.lineWidth=1.5;x.beginPath();x.moveTo(P+24,yy+hh-8);x.lineTo(P+CW-24,yy+hh-8);x.stroke();x.setLineDash([]);
-        yy+=hh;
-      });
-    });
-    rr(P,ty,CW,th,26);x.fillStyle='#1f2a5c';x.fill();
-    x.fillStyle='#fff';x.font='500 22px '+F;x.textAlign='left';x.fillText('Tạm tính · '+t.n+' mục',P+28,ty+44);
-    x.fillStyle='#ffd36b';x.font='800 '+(t.lo===t.hi?52:40)+'px '+H;x.fillText(totalTxt(t),P+28,ty+100);
-    x.fillStyle='#fff';x.globalAlpha=.8;x.font='400 17px '+F;
-    var ny=ty+th-18;
-    if(t.other&&(t.lo||t.hi)){x.fillText('+ '+t.other+' mục báo giá hoặc thương lượng riêng',P+28,ny-26)}
-    x.fillText('Giá chốt do shop xác nhận sau khi kiểm tra tài khoản.',P+28,ny);x.globalAlpha=1;
-    rr(P,fy,CW,fh,22);x.fillStyle='#fff';x.fill();x.lineWidth=2;x.strokeStyle='#d5def0';x.stroke();
-    x.fillStyle='#1f2a5c';x.font='800 28px '+H;x.fillText('Gửi ảnh này qua inbox để chốt giá',P+24,fy+46);
-    x.fillStyle='#6a4fc9';x.font='500 20px '+F;
-    x.fillText('Facebook 1: facebook.com/profile.php?id=61570781885555',P+24,fy+84);
-    x.fillText('Facebook 2: facebook.com/dinh.duc.5203141',P+24,fy+114);
-    return cv;
-  });
-}
-function toBlob(cv){return new Promise(function(r){cv.toBlob(r,'image/png')})}
-
-$('#copyimg').onclick=function(){
-  if(!totals().n){toast('Chọn ít nhất 1 dịch vụ trước nhé');return}
-  var blobP=drawPoster().then(toBlob);
-  toast('Đang tạo ảnh...');
-  var done=function(){toast('Đã copy ảnh, dán vào tin nhắn là gửi được')};
-  var fallback=function(){
-    blobP.then(function(blob){
-      var f=new File([blob],'puna-shop-yeu-cau.png',{type:'image/png'});
-      if(navigator.canShare&&navigator.canShare({files:[f]})){
-        return navigator.share({files:[f]}).catch(function(e){if(e&&e.name!=='AbortError')throw e});
+  <script>
+    var DATA = [
+      {
+        id: 'rush', name: 'Rush Map', icon: '', note: 'Tính theo khu vực và tiến độ tài khoản. Các yêu cầu rương, Thần Đồng, waypoint hoặc quest đặc biệt cần xác nhận trước.', g: 'g3', items: [
+          ['Mondstadt', 160], ['Long Tích Tuyết Sơn', 105], ['Liyue', 450], ['Trầm Ngọc Cốc', 210], ['Vực Đá Sâu', 240], ['Inazuma', 390], ['Sumeru (rừng)', 480], ['Sumeru (sa mạc)', 600], ['Fontaine', 630], ['Biển Kỷ Nguyên', 90], ['Enkanomiya', 200], ['Natlan', 630], ['Nod-Krai', 655], ['Khu nghỉ dưỡng', 95], ['Núi gió lặng', 90], ['Thần điện không gian', 220]]
+      },
+      {
+        id: 'tp', name: 'Điểm dịch chuyển', icon: '', note: 'Mở nhanh đủ điểm theo khu vực.', g: 'g3', items: [
+          ['Mondstadt', 50], ['Liyue', 50], ['Trầm Ngọc Sơn', 35], ['Sumeru', 130], ['Inazuma', 60], ['Fontaine', 130], ['Vực Đá Sâu', 50], ['Enkanomiya', 60], ['Natlan', 60], ['Nod-Krai', 60], ['Núi thành viên cổ', 50]]
+      },
+      {
+        id: 'oculi', name: 'Thần Đồng', icon: '', note: 'Không bao gồm Lưu Minh Thạch.', g: 'g3', items: [
+          ['Phong', 45], ['Nham', 85], ['Lôi', 120], ['Thảo', 190], ['Thủy', 200], ['Hỏa', 220], ['Nguyệt', 195], ['Cá chép', 50], ['Mã não', 45]]
+      },
+      {
+        id: 'acc', name: 'Chăm acc', icon: '', note: 'Xác nhận rõ phạm vi daily, nhựa và event trước khi nhận.', g: '', items: [
+          ['Daily + xả nhựa', 3, '/ngày'], ['Gói tuần', 18], ['Gói tháng', 60], ['Event nhỏ', 30], ['Event lớn', 60], ['Build nhân vật theo yêu cầu', 'Báo giá', 'Artifact, vũ khí, thiên phú, đổi hình...']]
+      },
+      {
+        id: 'fight', name: 'Content chiến đấu', icon: '', note: 'Khách gửi đội hình và mục tiêu cần đạt để báo giá phù hợp.', g: '', items: [
+          ['La Hoàn 1-8', 'Thương lượng'], ['La Hoàn 9-12', 'Thương lượng'], ['La Hoàn 9-12 (36 sao)', 'Thương lượng'], ['Nhà Hát', 'Thương lượng'], ['Ảo Cảnh', 'Thương lượng']]
+      },
+      { id: 'sup', name: 'Phụ', icon: '', note: '', g: '', items: [['Tinh Diệp', 15]] },
+      {
+        id: 'more', name: 'Mục khác', icon: '', note: '', g: '', items: [
+          ['Ma Thần', 40, '/màn'], ['Truyền Thuyết', 27.5, '/màn', 'Giá 25-30k/màn, tạm tính 27,5k'], ['Nhiệm vụ đồng hành', 20, '/màn'], ['Nhiệm vụ Thế Giới', 22.5, '/quest', 'Giá 20-25k/quest, tạm tính 22,5k']]
       }
-      var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='puna-shop-yeu-cau.png';document.body.appendChild(a);a.click();a.remove();
-      toast('Trình duyệt không cho copy, đã tải ảnh về máy');
-    }).catch(function(){toast('Không tạo được ảnh, thử lại giúp mình')});
-  };
-  if(window.ClipboardItem&&navigator.clipboard&&navigator.clipboard.write){
-    navigator.clipboard.write([new ClipboardItem({'image/png':blobP})]).then(done,fallback);
-  }else fallback();
-};
+    ];
 
-/* ---- Trang chính sách theo hash ---- */
-function setTab(id){
-  var tabs=$('#tabs');
-  tabs.querySelectorAll('a').forEach(function(a){
-    var on=a.getAttribute('href')==='#'+id;
-    if(on===a.classList.contains('on'))return;
-    a.classList.toggle('on',on);
-    if(on)tabs.scrollLeft=a.offsetLeft-(tabs.clientWidth-a.offsetWidth)/2;
-  });
-}
-function route(){
-  var p=location.hash==='#chinh-sach';
-  document.body.classList.toggle('page-policy',p);
-  document.title=p?'Chính sách – Puna Shop':'Puna Shop – Cày thuê Genshin Impact';
-  if(p)window.scrollTo(0,0);
-}
-window.addEventListener('hashchange',route);
-build();refresh();route();
-if('IntersectionObserver' in window){
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&!document.body.classList.contains('page-policy'))setTab(e.target.id)})},{rootMargin:'-40% 0px -55% 0px'});
-  document.querySelectorAll('section.cat').forEach(function(sec){io.observe(sec)});
-}
-</script>
+    var $ = function (q) { return document.querySelector(q) };
+    function pr(it) { return typeof it[1] === 'number' ? (it[1] === 27.5 ? '25-30k' : it[1] === 22.5 ? '20-25k' : it[1] + 'k') + (it[2] || '') : it[1] }
+    function sub(it) { return typeof it[1] === 'number' ? '' : (it[2] || '') }
+
+    var sel = {};
+    function rng(it) { return it[1] === 27.5 ? [25, 30] : it[1] === 22.5 ? [20, 25] : [it[1], it[1]] }
+    function money(k) { return Math.round(k * 1000).toLocaleString('vi-VN') + 'đ' }
+    function picked() { var out = []; DATA.forEach(function (c) { var its = []; c.items.forEach(function (it, i) { if (sel[c.id + i]) its.push(it) }); if (its.length) out.push({ c: c, items: its }) }); return out }
+    function totals() { var t = { lo: 0, hi: 0, other: 0, n: 0 }; picked().forEach(function (g) { g.items.forEach(function (it) { t.n++; if (typeof it[1] === 'number') { var r = rng(it); t.lo += r[0]; t.hi += r[1] } else t.other++ }) }); return t }
+    function totalTxt(t) { if (!t.lo && !t.hi) return 'Chờ shop báo giá'; return t.lo === t.hi ? money(t.lo) : money(t.lo) + ' – ' + money(t.hi) }
+    function refresh() { var t = totals(); $('#sum').hidden = !t.n; $('#sumtxt').textContent = t.n + ' mục · ' + totalTxt(t) + ((t.other && (t.lo || t.hi)) ? ' + ' + t.other + ' mục báo giá' : '') }
+
+    function build() {
+      var html = '', tabs = '';
+      DATA.forEach(function (c) {
+        tabs += '<a href="#' + c.id + '">' + c.name + '</a>';
+        html += '<section class="cat" id="' + c.id + '"><h2>' + (c.icon ? '<span aria-hidden="true">' + c.icon + '</span>' : '') + c.name + '</h2><p class="note">' + c.note + '</p><div class="grid ' + c.g + '">';
+        c.items.forEach(function (it, i) {
+          var sb = sub(it);
+          html += '<button type="button" class="item" data-k="' + c.id + i + '" aria-pressed="false"><span class="box" aria-hidden="true">✓</span><span class="nm">' + it[0] + (sb ? '<small>' + sb + '</small>' : '') + '</span><span class="pr">' + pr(it) + '</span></button>';
+        });
+        html += '</div></section>';
+      });
+      $('#tabs').innerHTML = tabs; $('#cats').innerHTML = html;
+    }
+    document.addEventListener('click', function (e) {
+      var b = e.target.closest('.item'); if (!b) return;
+      var k = b.dataset.k; if (sel[k]) delete sel[k]; else sel[k] = 1;
+      b.classList.toggle('on', !!sel[k]); b.setAttribute('aria-pressed', !!sel[k]); refresh();
+    });
+    $('#clear').onclick = function () { sel = {}; document.querySelectorAll('.item.on').forEach(function (b) { b.classList.remove('on'); b.setAttribute('aria-pressed', 'false') }); refresh() };
+
+    function toast(m) { var t = $('#toast'); t.textContent = m; t.classList.add('show'); clearTimeout(toast.h); toast.h = setTimeout(function () { t.classList.remove('show') }, 2800) }
+
+    /* ---- Vẽ ảnh bảng giá theo mục đã chọn ---- */
+    function drawPoster() {
+      var fonts = document.fonts ? Promise.all([document.fonts.load('600 22px "Be Vietnam Pro"'), document.fonts.load('800 40px "Baloo 2"')]).catch(function () { }) : Promise.resolve();
+      return fonts.then(function () {
+        var S = 2, W = 900, P = 40, CW = W - 2 * P, GAP = 22, F = '"Be Vietnam Pro",sans-serif', H = '"Baloo 2","Be Vietnam Pro",sans-serif';
+        var groups = picked(), t = totals(), y = 170, layout = [];
+        groups.forEach(function (g) { var h = 84 + 14; g.items.forEach(function (it) { h += sub(it) ? 62 : 42 }); layout.push({ g: g, y: y, h: h }); y += h + GAP });
+        var ty = y, th = (t.other && (t.lo || t.hi)) ? 170 : 140; y += th + GAP;
+        var fy = y, fh = 140, H2 = fy + fh + 40;
+        var cv = document.createElement('canvas'); cv.width = W * S; cv.height = H2 * S;
+        var x = cv.getContext('2d'); x.scale(S, S);
+        function rr(px, py, w, h, r) { x.beginPath(); x.moveTo(px + r, py); x.arcTo(px + w, py, px + w, py + h, r); x.arcTo(px + w, py + h, px, py + h, r); x.arcTo(px, py + h, px, py, r); x.arcTo(px, py, px + w, py, r); x.closePath() }
+        x.fillStyle = '#f1f5fc'; x.fillRect(0, 0, W, H2);
+        var gr = x.createRadialGradient(80, 50, 0, 80, 50, 420); gr.addColorStop(0, '#e3dcff'); gr.addColorStop(1, 'rgba(227,220,255,0)'); x.fillStyle = gr; x.fillRect(0, 0, W, H2);
+        x.textBaseline = 'alphabetic'; x.textAlign = 'left';
+        x.fillStyle = '#e4a935'; x.font = '800 52px ' + H; x.fillText('✦', P, 92);
+        x.fillStyle = '#1f2a5c'; x.font = '800 60px ' + H; x.fillText('Puna Shop', P + 58, 96);
+        x.fillStyle = '#5b6490'; x.font = '500 23px ' + F; x.fillText('Dịch vụ cày thuê Genshin Impact đã chọn · Cày tay 100%', P, 138);
+        layout.forEach(function (L) {
+          rr(P, L.y, CW, L.h, 22); x.fillStyle = '#fff'; x.fill(); x.lineWidth = 2; x.strokeStyle = '#d5def0'; x.stroke();
+          x.fillStyle = '#1f2a5c'; x.font = '800 34px ' + H; x.textAlign = 'left'; x.fillText(L.g.c.name, P + 24, L.y + 54);
+          var yy = L.y + 84;
+          L.g.items.forEach(function (it) {
+            var sb = sub(it), hh = sb ? 62 : 42;
+            x.fillStyle = '#1f2a5c'; x.font = '500 22px ' + F; x.textAlign = 'left'; x.fillText(it[0], P + 24, yy + 16);
+            x.fillStyle = '#6a4fc9'; x.font = '600 22px ' + F; x.textAlign = 'right'; x.fillText(pr(it), P + CW - 24, yy + 16); x.textAlign = 'left';
+            if (sb) { x.fillStyle = '#5b6490'; x.font = '400 16px ' + F; x.fillText(sb, P + 24, yy + 40) }
+            x.setLineDash([4, 5]); x.strokeStyle = '#d5def0'; x.lineWidth = 1.5; x.beginPath(); x.moveTo(P + 24, yy + hh - 8); x.lineTo(P + CW - 24, yy + hh - 8); x.stroke(); x.setLineDash([]);
+            yy += hh;
+          });
+        });
+        rr(P, ty, CW, th, 26); x.fillStyle = '#1f2a5c'; x.fill();
+        x.fillStyle = '#fff'; x.font = '500 22px ' + F; x.textAlign = 'left'; x.fillText('Tạm tính · ' + t.n + ' mục', P + 28, ty + 44);
+        x.fillStyle = '#ffd36b'; x.font = '800 ' + (t.lo === t.hi ? 52 : 40) + 'px ' + H; x.fillText(totalTxt(t), P + 28, ty + 100);
+        x.fillStyle = '#fff'; x.globalAlpha = .8; x.font = '400 17px ' + F;
+        var ny = ty + th - 18;
+        if (t.other && (t.lo || t.hi)) { x.fillText('+ ' + t.other + ' mục báo giá hoặc thương lượng riêng', P + 28, ny - 26) }
+        x.fillText('Giá chốt do shop xác nhận sau khi kiểm tra tài khoản.', P + 28, ny); x.globalAlpha = 1;
+        rr(P, fy, CW, fh, 22); x.fillStyle = '#fff'; x.fill(); x.lineWidth = 2; x.strokeStyle = '#d5def0'; x.stroke();
+        x.fillStyle = '#1f2a5c'; x.font = '800 28px ' + H; x.fillText('Gửi ảnh này qua inbox để chốt giá', P + 24, fy + 46);
+        x.fillStyle = '#6a4fc9'; x.font = '500 20px ' + F;
+        x.fillText('Facebook 1: facebook.com/profile.php?id=61570781885555', P + 24, fy + 84);
+        x.fillText('Facebook 2: facebook.com/dinh.duc.5203141', P + 24, fy + 114);
+        return cv;
+      });
+    }
+    function toBlob(cv) { return new Promise(function (r) { cv.toBlob(r, 'image/png') }) }
+
+    $('#copyimg').onclick = function () {
+      if (!totals().n) { toast('Chọn ít nhất 1 dịch vụ trước nhé'); return }
+      var blobP = drawPoster().then(toBlob);
+      toast('Đang tạo ảnh...');
+      var done = function () { toast('Đã copy ảnh, dán vào tin nhắn là gửi được') };
+      var fallback = function () {
+        blobP.then(function (blob) {
+          var f = new File([blob], 'puna-shop-yeu-cau.png', { type: 'image/png' });
+          if (navigator.canShare && navigator.canShare({ files: [f] })) {
+            return navigator.share({ files: [f] }).catch(function (e) { if (e && e.name !== 'AbortError') throw e });
+          }
+          var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'puna-shop-yeu-cau.png'; document.body.appendChild(a); a.click(); a.remove();
+          toast('Trình duyệt không cho copy, đã tải ảnh về máy');
+        }).catch(function () { toast('Không tạo được ảnh, thử lại giúp mình') });
+      };
+      if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {
+        navigator.clipboard.write([new ClipboardItem({ 'image/png': blobP })]).then(done, fallback);
+      } else fallback();
+    };
+
+    /* ---- Trang chính sách theo hash ---- */
+    function setTab(id) {
+      var tabs = $('#tabs');
+      tabs.querySelectorAll('a').forEach(function (a) {
+        var on = a.getAttribute('href') === '#' + id;
+        if (on === a.classList.contains('on')) return;
+        a.classList.toggle('on', on);
+        if (on) tabs.scrollLeft = a.offsetLeft - (tabs.clientWidth - a.offsetWidth) / 2;
+      });
+    }
+    function route() {
+      var p = location.hash === '#chinh-sach';
+      document.body.classList.toggle('page-policy', p);
+      document.title = p ? 'Chính sách – Puna Shop' : 'Puna Shop – Cày thuê Genshin Impact';
+      if (p) window.scrollTo(0, 0);
+    }
+    window.addEventListener('hashchange', route);
+    build(); refresh(); route();
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting && !document.body.classList.contains('page-policy')) setTab(e.target.id) }) }, { rootMargin: '-40% 0px -55% 0px' });
+      document.querySelectorAll('section.cat').forEach(function (sec) { io.observe(sec) });
+    }
+  </script>
 </body>
+
 </html>
